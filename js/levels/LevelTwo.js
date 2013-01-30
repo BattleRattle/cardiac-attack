@@ -7,6 +7,8 @@ var LevelTwo = function (game) {
     var splatterSounds = [  './sounds/sfx/shortSquirt1.mp3','./sounds/sfx/shortSquirt2.mp3','./sounds/sfx/shortSquirt3.mp3',
                             './sounds/sfx/shortSquirt4.mp3','./sounds/sfx/shortSquirt5.mp3','./sounds/sfx/shortSquirt6.mp3']
 
+    var sounds = {heartbeat : game.assets['./sounds/sfx/heartbeat2.wav']}
+    
     var bg_static = new Sprite(1138, 640);
     var bg_1 = new Sprite(9000, 640);
     var fg_1 = new Sprite(9000, 640);
