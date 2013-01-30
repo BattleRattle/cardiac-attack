@@ -2,7 +2,7 @@ var LevelThree = function(game) {
 	var bloodflow = 1.0;
 
 	//game.assets['./sounds/bgmusic/fast.m4a'].play();
-	var splatterSounds = [	'./sounds/sfx/shortSquirt1.mp3', './sounds/sfx/shortSquirt2.mp3', './sounds/sfx/shortSquirt3.mp3', 
+	var splatterSounds = [	'./sounds/sfx/shortSquirt1.mp3', './sounds/sfx/shortSquirt2.mp3', './sounds/sfx/shortSquirt3.mp3',
 							'./sounds/sfx/shortSquirt4.mp3', './sounds/sfx/shortSquirt5.mp3', './sounds/sfx/shortSquirt6.mp3'];
 
 	var bg_static = new Sprite(1138, 640);
@@ -69,246 +69,246 @@ var LevelThree = function(game) {
 			fg_1.x = 0;
 
 			//TODO: ADD ENEMIES
-			
+
 			// big thing
 			enemy0 = $3n3myF4ctory('ß', this.enemies);
 			enemy0.x = 7979;
 			enemy0.y = 179;
-			
+
 			// qu fisch
 			enemy1 = $3n3myF4ctory(',', this.enemies);
 			enemy1.x = 798;
 			enemy1.y = 390;
-			
+
 			// qu fisch
 			enemy2 = $3n3myF4ctory(',', this.enemies);
 			enemy2.x = 1093;
 			enemy2.y = 293;
-			
+
 			// qu fisch
 			enemy3 = $3n3myF4ctory(',', this.enemies);
 			enemy3.x = 1204;
 			enemy3.y = 126;
-			
+
 			// qu fisch
 			enemy4 = $3n3myF4ctory(',', this.enemies);
 			enemy4.x = 1233;
 			enemy4.y = 346;
-			
+
 			// qu fisch
 			enemy5 = $3n3myF4ctory(',', this.enemies);
 			enemy5.x = 1279;
 			enemy5.y = 416;
-			
+
 			// qu fisch
 			enemy6 = $3n3myF4ctory(',', this.enemies);
 			enemy6.x = 1417;
 			enemy6.y = 213;
-			
+
 			// qu fisch
 			enemy6 = $3n3myF4ctory(',', this.enemies);
 			enemy6.x = 2160;
 			enemy6.y = 370;
-			
+
 			// qu fisch
 			enemy7 = $3n3myF4ctory(',', this.enemies);
 			enemy7.x = 2602;
 			enemy7.y = 454;
-			
+
 			// qu fisch
 			enemy8 = $3n3myF4ctory(',', this.enemies);
 			enemy8.x = 3161;
 			enemy8.y = 346;
-			
+
 			// qu fisch
 			enemy9 = $3n3myF4ctory(',', this.enemies);
 			enemy9.x = 3415;
 			enemy9.y = 364;
-			
+
 			// qu fisch
 			enemy10 = $3n3myF4ctory(',', this.enemies);
 			enemy10.x = 3567;
 			enemy10.y = 469;
-			
+
 			// qu fisch
 			enemy11 = $3n3myF4ctory(',', this.enemies);
 			enemy11.x = 3597;
 			enemy11.y = 320;
-			
+
 			// qu fisch
 			enemy12 = $3n3myF4ctory(',', this.enemies);
 			enemy12.x = 4088;
 			enemy12.y = 365;
-			
+
 			// qu fisch
 			enemy13 = $3n3myF4ctory(',', this.enemies);
 			enemy13.x = 4420;
 			enemy13.y = 265;
-			
+
 			// qu fisch
 			enemy14 = $3n3myF4ctory(',', this.enemies);
 			enemy14.x = 4504;
 			enemy14.y = 415;
-			
+
 			// qu fisch
 			enemy15 = $3n3myF4ctory(',', this.enemies);
 			enemy15.x = 4593;
 			enemy15.y = 319;
-			
+
 			// qu fisch
 			enemy16 = $3n3myF4ctory(',', this.enemies);
 			enemy16.x = 4944;
 			enemy16.y = 259;
-			
+
 			// qu fisch
 			enemy17 = $3n3myF4ctory(',', this.enemies);
 			enemy17.x = 5245;
 			enemy17.y = 259;
-			
+
 			// qu fisch
 			enemy18 = $3n3myF4ctory(',', this.enemies);
 			enemy18.x = 5301;
 			enemy18.y = 453;
-			
+
 			// qu fisch
 			enemy19 = $3n3myF4ctory(',', this.enemies);
 			enemy19.x = 5400;
 			enemy19.y = 365;
-			
+
 			// qu fisch
 			enemy20 = $3n3myF4ctory(',', this.enemies);
 			enemy20.x = 5620;
 			enemy20.y = 469;
-			
+
 			// qu fisch
 			enemy21 = $3n3myF4ctory(',', this.enemies);
 			enemy21.x = 5783;
 			enemy21.y = 259;
-			
+
 			// qu fisch
 			enemy22 = $3n3myF4ctory(',', this.enemies);
 			enemy22.x = 5844;
 			enemy22.y = 427;
-			
+
 			// qu fisch
 			enemy23 = $3n3myF4ctory(',', this.enemies);
 			enemy23.x = 6083;
 			enemy23.y = 444;
-			
+
 			// qu fisch
 			enemy24 = $3n3myF4ctory(',', this.enemies);
 			enemy24.x = 6741;
 			enemy24.y = 401;
-			
+
 			// qu fisch
 			enemy25 = $3n3myF4ctory(',', this.enemies);
 			enemy25.x = 6741;
 			enemy25.y = 232;
-			
+
 			// qu fisch
 			enemy26 = $3n3myF4ctory(',', this.enemies);
 			enemy26.x = 7058;
 			enemy26.y = 238;
-			
-			// blutkörperchen
-			enemy27 = $3n3myF4ctory('.', this.enemies);
-			enemy27.x = 495;
-			enemy27.y = 396;
-			
-			// blutkörperchen
-			enemy28 = $3n3myF4ctory('.', this.enemies);
-			enemy28.x = 595;
-			enemy28.y = 407;
-			
-			// blutkörperchen
-			enemy29 = $3n3myF4ctory('.', this.enemies);
-			enemy29.x = 706;
-			enemy29.y = 387;
-			
-			// blutkörperchen
-			enemy30 = $3n3myF4ctory('.', this.enemies);
-			enemy30.x = 912;
-			enemy30.y = 322;
-			
-			// blutkörperchen
-			enemy31 = $3n3myF4ctory('.', this.enemies);
-			enemy31.x = 1468;
-			enemy31.y = 442;
-			
-			// blutkörperchen
-			enemy32 = $3n3myF4ctory('.', this.enemies);
-			enemy32.x = 1818;
-			enemy32.y = 179;
-			
-			// blutkörperchen
-			enemy33 = $3n3myF4ctory('.', this.enemies);
-			enemy33.x = 2800;
-			enemy33.y = 350;
-			
-			// blutkörperchen
-			enemy34 = $3n3myF4ctory('.', this.enemies);
-			enemy34.x = 3533;
-			enemy34.y = 351;
-			
-			// blutkörperchen
-			enemy35 = $3n3myF4ctory('.', this.enemies);
-			enemy35.x = 4610;
-			enemy35.y = 247;
-			
-			// blutkörperchen
-			enemy36 = $3n3myF4ctory('.', this.enemies);
-			enemy36.x = 4826;
-			enemy36.y = 351;
-			
-			// blutkörperchen
-			enemy37 = $3n3myF4ctory('.', this.enemies);
-			enemy37.x = 5114;
-			enemy37.y = 224;
-			
-			// blutkörperchen
-			enemy38 = $3n3myF4ctory('.', this.enemies);
-			enemy38.x = 5170;
-			enemy38.y = 405;
-			
-			// blutkörperchen
-			enemy39 = $3n3myF4ctory('.', this.enemies);
-			enemy39.x = 5481;
-			enemy39.y = 305;
-			
-			// blutkörperchen
-			enemy40 = $3n3myF4ctory('.', this.enemies);
-			enemy40.x = 5572;
-			enemy40.y = 474;
-			
-			// blutkörperchen
-			enemy41 = $3n3myF4ctory('.', this.enemies);
-			enemy41.x = 6091;
-			enemy41.y = 298;
-			
-			// blutkörperchen
-			enemy42 = $3n3myF4ctory('.', this.enemies);
-			enemy42.x = 6410;
-			enemy42.y = 240;
-			
-			// blutkörperchen
-			enemy43 = $3n3myF4ctory('.', this.enemies);
-			enemy43.x = 6983;
-			enemy43.y = 240;
-			
-			// blutkörperchen
-			enemy44 = $3n3myF4ctory('.', this.enemies);
-			enemy44.x = 7567;
-			enemy44.y = 420;
-			
-			// blutkörperchen
-			enemy45 = $3n3myF4ctory('.', this.enemies);
-			enemy45.x = 8586;
-			enemy45.y = 272;
-			
-			// blutkörperchen
-			enemy46 = $3n3myF4ctory('.', this.enemies);
-			enemy46.x = 8716;
-			enemy46.y = 347;
+
+//			// blutkörperchen
+//			enemy27 = $3n3myF4ctory('.', this.enemies);
+//			enemy27.x = 495;
+//			enemy27.y = 396;
+//
+//			// blutkörperchen
+//			enemy28 = $3n3myF4ctory('.', this.enemies);
+//			enemy28.x = 595;
+//			enemy28.y = 407;
+//
+//			// blutkörperchen
+//			enemy29 = $3n3myF4ctory('.', this.enemies);
+//			enemy29.x = 706;
+//			enemy29.y = 387;
+//
+//			// blutkörperchen
+//			enemy30 = $3n3myF4ctory('.', this.enemies);
+//			enemy30.x = 912;
+//			enemy30.y = 322;
+//
+//			// blutkörperchen
+//			enemy31 = $3n3myF4ctory('.', this.enemies);
+//			enemy31.x = 1468;
+//			enemy31.y = 442;
+//
+//			// blutkörperchen
+//			enemy32 = $3n3myF4ctory('.', this.enemies);
+//			enemy32.x = 1818;
+//			enemy32.y = 179;
+//
+//			// blutkörperchen
+//			enemy33 = $3n3myF4ctory('.', this.enemies);
+//			enemy33.x = 2800;
+//			enemy33.y = 350;
+//
+//			// blutkörperchen
+//			enemy34 = $3n3myF4ctory('.', this.enemies);
+//			enemy34.x = 3533;
+//			enemy34.y = 351;
+//
+//			// blutkörperchen
+//			enemy35 = $3n3myF4ctory('.', this.enemies);
+//			enemy35.x = 4610;
+//			enemy35.y = 247;
+//
+//			// blutkörperchen
+//			enemy36 = $3n3myF4ctory('.', this.enemies);
+//			enemy36.x = 4826;
+//			enemy36.y = 351;
+//
+//			// blutkörperchen
+//			enemy37 = $3n3myF4ctory('.', this.enemies);
+//			enemy37.x = 5114;
+//			enemy37.y = 224;
+//
+//			// blutkörperchen
+//			enemy38 = $3n3myF4ctory('.', this.enemies);
+//			enemy38.x = 5170;
+//			enemy38.y = 405;
+//
+//			// blutkörperchen
+//			enemy39 = $3n3myF4ctory('.', this.enemies);
+//			enemy39.x = 5481;
+//			enemy39.y = 305;
+//
+//			// blutkörperchen
+//			enemy40 = $3n3myF4ctory('.', this.enemies);
+//			enemy40.x = 5572;
+//			enemy40.y = 474;
+//
+//			// blutkörperchen
+//			enemy41 = $3n3myF4ctory('.', this.enemies);
+//			enemy41.x = 6091;
+//			enemy41.y = 298;
+//
+//			// blutkörperchen
+//			enemy42 = $3n3myF4ctory('.', this.enemies);
+//			enemy42.x = 6410;
+//			enemy42.y = 240;
+//
+//			// blutkörperchen
+//			enemy43 = $3n3myF4ctory('.', this.enemies);
+//			enemy43.x = 6983;
+//			enemy43.y = 240;
+//
+//			// blutkörperchen
+//			enemy44 = $3n3myF4ctory('.', this.enemies);
+//			enemy44.x = 7567;
+//			enemy44.y = 420;
+//
+//			// blutkörperchen
+//			enemy45 = $3n3myF4ctory('.', this.enemies);
+//			enemy45.x = 8586;
+//			enemy45.y = 272;
+//
+//			// blutkörperchen
+//			enemy46 = $3n3myF4ctory('.', this.enemies);
+//			enemy46.x = 8716;
+//			enemy46.y = 347;
 
 			actor.image = game.assets['./images/spider_ani_map_960x128.png'];
 			actor.vx = 0;

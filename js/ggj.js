@@ -63,12 +63,12 @@ getCollisionMap('./images/enemy04_metroid.png', 1, function(map) {
 getCollisionMap('./images/enemy04_metroid_hit.png', 1, function(map) {
 	collisionMap.enemies['$'].hit = map;
 });
-getCollisionMap('./images/Enemy05_Blutkörperchen.png', 5, function(map) {
-	collisionMap.enemies['.'].map = map;
-});
-getCollisionMap('./images/Enemy05_BlutkörperchenSW.png', 5, function(map) {
-	collisionMap.enemies['.'].hit = map;
-});
+//getCollisionMap('./images/Enemy05_Blutkörperchen.png', 5, function(map) {
+//	collisionMap.enemies['.'].map = map;
+//});
+//getCollisionMap('./images/Enemy05_BlutkörperchenSW.png', 5, function(map) {
+//	collisionMap.enemies['.'].hit = map;
+//});
 getCollisionMap('./images/Enemie08_QuFisch.png', 2, function(map) {
 	collisionMap.enemies[','].map = map;
 });
@@ -154,7 +154,7 @@ window.onload = function() {
         	'./images/enemie02_nausicaa.png',
             './images/enemie03_Quall.png',
             './images/enemy04_metroid.png',
-            './images/Enemy05_Blutkörperchen.png',
+//            './images/Enemy05_Blutkörperchen.png',
             './images/Enemie08_QuFisch.png',
             './images/enemy06_qualle.png',
             './images/Blood.png',
@@ -191,7 +191,7 @@ window.onload = function() {
 				'./images/enemie02_nausicaa_HIT.png',
 				'./images/enemie03_QuallSW.png',
 				'./images/enemy04_metroid_hit.png',
-				'./images/Enemy05_BlutkörperchenSW.png',
+//				'./images/Enemy05_BlutkörperchenSW.png',
 				'./images/enemie03_QuallSW.png',
 				'./images/Enemie08_QuFischSW.png',
 				'./images/StachelHit.png',
