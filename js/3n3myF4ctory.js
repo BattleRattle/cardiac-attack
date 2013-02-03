@@ -45,17 +45,17 @@ $3n3myF4ctory = function (type, enemies) {
             enemies.addChild(enemy);
 
             return enemy;
-//        case '.':
-//            var enemy = new Sprite(64, 64);
-//            enemy.image = game.assets['./images/Enemy05_Blutkörperchen.png'];
-//            enemy.enemy_id = '.';
-//            enemy.spriteCount = 5;
-//            enemy.damage = -5;
-//            enemy.bloodHeightValue = 75;
-//            enemy.hasDeadSprite = false;
-//            enemies.addChild(enemy);
-//
-//            return enemy;
+        case '.':
+            var enemy = new Sprite(64, 64);
+            enemy.image = game.assets['./images/Enemy05_Blutkoerperchen.png'];
+            enemy.enemy_id = '.';
+            enemy.spriteCount = 5;
+            enemy.damage = -5;
+            enemy.bloodHeightValue = 75;
+            enemy.hasDeadSprite = false;
+            enemies.addChild(enemy);
+
+            return enemy;
         case '+':
             var enemy = new Sprite(64, 64);
             enemy.image = game.assets['./images/Stachel.png'];

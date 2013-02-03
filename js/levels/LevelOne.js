@@ -3,13 +3,13 @@ var LevelOne = function (game) {
     var bloodflow = 1.0;
     var health = 100;
 
-    //game.assets['./sounds/bgmusic/fast.mp3'].play();
     var splatterSounds = [  './sounds/sfx/shortSquirt1.mp3','./sounds/sfx/shortSquirt2.mp3','./sounds/sfx/shortSquirt3.mp3',
                             './sounds/sfx/shortSquirt4.mp3','./sounds/sfx/shortSquirt5.mp3','./sounds/sfx/shortSquirt6.mp3']
 
+	var sounds = {heartbeat : game.assets['./sounds/sfx/heartbeat2.wav']}
+    
     var bg_static = new Sprite(1138, 640);
     var bg_1 = new Sprite(3008, 640);
-    var bg_2 = new Sprite(3008, 640);
     var fg_1 = new Sprite(3008, 640);
     var actor = new Sprite(192, 128);
     var actor2_sprite = new Sprite(192, 128);
@@ -54,11 +54,9 @@ var LevelOne = function (game) {
 
             this.group.addChild(bg_static);
             this.group.addChild(bg_1);
-            this.group.addChild(bg_2);
             this.group.addChild(actor);
             this.group.addChild(actor2_sprite);
 
-            this.foregrounds.addChild(bg_2);
             this.foregrounds.addChild(fg_1);
             this.foregrounds.addChild(pulsating_layer);
             this.foregrounds.addChild(border);
@@ -75,11 +73,9 @@ var LevelOne = function (game) {
 
             bg_static.image = game.assets['./images/background_1138x640.jpg'];
             bg_1.image = game.assets['./images/level1_bg.png'];
-            bg_2.image = game.assets['./images/background_02_3008x640_2.png'];
             fg_1.image = game.assets['./images/level1_foreground_3008x640.png'];
 
             bg_1.x = 0;
-            bg_2.x = 0;
             fg_1.x = 0;
 
             enemy1 = $3n3myF4ctory('..', this.enemies);
@@ -199,7 +195,6 @@ var LevelOne = function (game) {
             this.group.addEventListener('enterframe', function (e) {
                 if (bg_1.x > -(3008 - 1138)) {
                 bg_1.x -= bloodflow * $$$$;
-                bg_2.x -= bloodflow * $$$$;
                 fg_1.x -= bloodflow * $$$$;
                 }else if(actor.x >= (1138 - 196)){
                 	self.next();
@@ -397,9 +392,8 @@ var LevelOne = function (game) {
                 player.tick(game);
             });
 
+            new Heartbeat(game, this.group, sounds.heartbeat);
             game.pushScene(this.scene);
         }
     };
-
-    new Heartbeat(game, levelOne.group, sounds.heartbeat);
 }

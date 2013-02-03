@@ -63,12 +63,12 @@ getCollisionMap('./images/enemy04_metroid.png', 1, function(map) {
 getCollisionMap('./images/enemy04_metroid_hit.png', 1, function(map) {
 	collisionMap.enemies['$'].hit = map;
 });
-//getCollisionMap('./images/Enemy05_Blutkörperchen.png', 5, function(map) {
-//	collisionMap.enemies['.'].map = map;
-//});
-//getCollisionMap('./images/Enemy05_BlutkörperchenSW.png', 5, function(map) {
-//	collisionMap.enemies['.'].hit = map;
-//});
+getCollisionMap('./images/Enemy05_Blutkoerperchen.png', 5, function(map) {
+	collisionMap.enemies['.'].map = map;
+});
+getCollisionMap('./images/Enemy05_BlutkoerperchenSW.png', 5, function(map) {
+	collisionMap.enemies['.'].hit = map;
+});
 getCollisionMap('./images/Enemie08_QuFisch.png', 2, function(map) {
 	collisionMap.enemies[','].map = map;
 });
@@ -146,7 +146,6 @@ window.onload = function() {
 	game.fps = 30;
 	game.preload('./images/background_1138x640.jpg',
 			'./images/level1_bg.png',
-			'./images/background_02_3008x640_2.png',
 			'./images/level1_foreground_3008x640.png',
 			'./images/spider_ani_map_960x128.png',
 			'./images/spider_ani_map_960x128_schwarz.png',
@@ -154,7 +153,7 @@ window.onload = function() {
         	'./images/enemie02_nausicaa.png',
             './images/enemie03_Quall.png',
             './images/enemy04_metroid.png',
-//            './images/Enemy05_Blutkörperchen.png',
+            './images/Enemy05_Blutkoerperchen.png',
             './images/Enemie08_QuFisch.png',
             './images/enemy06_qualle.png',
             './images/Blood.png',
@@ -187,20 +186,15 @@ window.onload = function() {
             './images/jump_cycle_schwarz.png',
             './sounds/sfx/heartbeat2.wav',
             './images/level3_bg.png',
-				'./images/enemy01_skorpioni_hit.png',
-				'./images/enemie02_nausicaa_HIT.png',
-				'./images/enemie03_QuallSW.png',
-				'./images/enemy04_metroid_hit.png',
-//				'./images/Enemy05_BlutkörperchenSW.png',
-				'./images/enemie03_QuallSW.png',
-				'./images/Enemie08_QuFischSW.png',
-				'./images/StachelHit.png',
-				'./images/collision_level_1_top_bottom.png');
-
-	var sounds = {
-		heartbeat : enchant.Sound.load('./sounds/sfx/heartbeat2.wav', 'audio/wav', function() {
-		})
-	};
+			'./images/enemy01_skorpioni_hit.png',
+			'./images/enemie02_nausicaa_HIT.png',
+			'./images/enemie03_QuallSW.png',
+			'./images/enemy04_metroid_hit.png',
+			'./images/Enemy05_BlutkoerperchenSW.png',
+			'./images/enemie03_QuallSW.png',
+			'./images/Enemie08_QuFischSW.png',
+			'./images/StachelHit.png',
+			'./images/collision_level_1_top_bottom.png');
 
 	game.onload = function () {
         global_health_bar = new Health;
@@ -212,9 +206,8 @@ window.onload = function() {
         positionStage(game.scale);
     }
 
-    if (devMode) {
+    if (devMode)
         game.debug();
-    } else {
+    else
         game.start();
-    }
 }
