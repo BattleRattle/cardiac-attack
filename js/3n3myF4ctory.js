@@ -61,7 +61,7 @@ $3n3myF4ctory = function (type, enemies) {
             enemy.image = game.assets['./images/Stachel.png'];
             enemy.enemy_id = '+';
             enemy.spriteCount = 4;
-            enemy.damage = 10;
+            enemy.damage = 2;
             enemy.bloodHeightValue = 75;
             enemy.hasDeadSprite = false;
             enemies.addChild(enemy);
