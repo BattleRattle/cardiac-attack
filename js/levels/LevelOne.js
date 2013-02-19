@@ -77,6 +77,10 @@ var LevelOne = function (game) {
 
             bg_1.x = 0;
             fg_1.x = 0;
+            
+            firstScropion = $3n3myF4ctory('_', this.enemies);
+            firstScropion.x = 570;
+            firstScropion.y = 110;
 
             enemy1 = $3n3myF4ctory('..', this.enemies);
             enemy1.x = 2353;
@@ -194,15 +198,15 @@ var LevelOne = function (game) {
 
             this.group.addEventListener('enterframe', function (e) {
                 if (bg_1.x > -(3008 - 1138)) {
-                bg_1.x -= bloodflow * $$$$;
-                fg_1.x -= bloodflow * $$$$;
+                bg_1.x -= bloodflow * GameSpeed;
+                fg_1.x -= bloodflow * GameSpeed;
                 }else if(actor.x >= (1138 - 196)){
                 	self.next();
                 }
 
 
                 for (var i = self.enemies.childNodes.length - 1; i >= 0; i--) {
-                    self.enemies.childNodes[i].x -= bloodflow * $$$$ - pulseMovement() * 2;
+                    self.enemies.childNodes[i].x -= bloodflow * GameSpeed - pulseMovement() * 2;
                     if (game.frame % 5 == 0 && !(self.enemies.childNodes[i].hasDeadSprite && self.enemies.childNodes[i].frame == self.enemies.childNodes[i].spriteCount)) {
                         self.enemies.childNodes[i].frame = ++self.enemies.childNodes[i].frame % self.enemies.childNodes[i].spriteCount;
                     }
@@ -210,7 +214,7 @@ var LevelOne = function (game) {
                 }
 
                 for (var i = self.bloods.childNodes.length - 1; i >= 0; i--) {
-                    self.bloods.childNodes[i].x -= bloodflow * $$$$;
+                    self.bloods.childNodes[i].x -= bloodflow * GameSpeed;
                     if (game.frame % 3 == 0) {
                         if (self.bloods.childNodes[i].frame + 1 == self.bloods.childNodes[i].spriteCount) {
                             self.bloods.removeChild(self.bloods.childNodes[i])
@@ -222,7 +226,7 @@ var LevelOne = function (game) {
                 }
 
                 for (var i = self.debris.childNodes.length - 1; i >= 0; i--) {
-                    self.debris.childNodes[i].x -= bloodflow * $$$$ - pulseMovement() * 2;
+                    self.debris.childNodes[i].x -= bloodflow * GameSpeed - pulseMovement() * 2;
                     if (!self.debris.childNodes[i].dying && game.frame % 5 == 0) {
                         self.debris.childNodes[i].frame = ++self.debris.childNodes[i].frame % self.debris.childNodes[i].normalSpriteCount;
                     }
@@ -243,9 +247,9 @@ var LevelOne = function (game) {
 
                 actor.ax = 0;
                 if (game.input.left)
-                    actor.ax = -0.5 * $$$$;
+                    actor.ax = -0.5 * GameSpeed;
                 else if (game.input.right)
-                    actor.ax = 0.5 * $$$$;
+                    actor.ax = 0.5 * GameSpeed;
 
                 if (actor.jumping) {
                     if (!game.input.up || --actor.jumpBoost < 0) {
@@ -253,15 +257,15 @@ var LevelOne = function (game) {
                     }
 
                     if (game.input.down) {
-                        actor.ay = 5 * $$$$;
+                        actor.ay = 5 * GameSpeed;
                         actor.dive = true;
                     }
                 } else {
                     actor.dive = false;
 
                     if (game.input.up) {
-                        actor.jumpBoost = 5 * $$$$;
-                        actor.ay = -1.75 * $$$$;
+                        actor.jumpBoost = 5 * GameSpeed;
+                        actor.ay = -1.75 * GameSpeed;
                     }
                 }
 

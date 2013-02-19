@@ -11,10 +11,10 @@ collisionMap.enemies = {};
 collisionMap.debris = {};
 collisionMap.foreground = {};
 
-var $$$$ = 2;
+var GameSpeed = 4;
 
 if (devMode) {
-    $$$$ = 5;
+    GameSpeed = 5;
 }
 
 collisionMap.enemies['_'] = {};
@@ -137,7 +137,7 @@ var positionStage = function(scale) {
 }
 
 var pulseMovement = function() {
-    return Math.cos((5 * $$$$ * game.frame % 360) / 180 * Math.PI);
+    return Math.cos((5 * GameSpeed * game.frame % 360) / 180 * Math.PI);
 }
 
 window.onload = function() {
